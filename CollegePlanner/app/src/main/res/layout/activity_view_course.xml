@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textAllCaps="true"
+        android:id="@+id/view_code"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@id/view"
+        android:textColor="@color/colorName"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_type"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/view_code"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimaryLight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/view_title"
+        android:hint="(No Course Title)"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_code"
+        android:layout_alignLeft="@+id/view_code"
+        android:layout_alignStart="@+id/view_code"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:id="@+id/view_units"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_title"
+        android:layout_alignLeft="@+id/view_title"
+        android:layout_alignStart="@+id/view_title"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:id="@+id/view_section"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/view_units"
+        android:layout_alignLeft="@+id/view_units"
+        android:layout_alignStart="@+id/view_units"
+        android:layout_marginTop="5dp"/>
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorSecondary"
+        android:layout_below="@+id/view_section"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructor:"
+        android:id="@+id/instructor_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_instructor"
+        android:layout_below="@id/view"
+        android:layout_toRightOf="@id/instructor_txt"
+        android:layout_alignTop="@+id/instructor_txt"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room:"
+        android:id="@+id/room_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_instructor"
+        android:layout_alignLeft="@+id/instructor_txt"
+        android:layout_alignStart="@+id/instructor_txt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_room"
+        android:layout_toRightOf="@+id/room_text"
+        android:layout_toEndOf="@+id/room_text"
+        android:layout_below="@id/view_instructor"
+        android:layout_alignStart="@id/view_instructor"
+        android:layout_alignLeft="@id/view_instructor"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allowed \nAbsences:"
+        android:id="@+id/absences_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_room"
+        android:layout_alignLeft="@+id/room_text"
+        android:layout_alignStart="@+id/room_text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_absences"
+        android:layout_below="@id/view_room"
+        android:layout_alignLeft="@+id/view_room"
+        android:layout_alignStart="@+id/view_room"
+        android:layout_marginTop="17dp"/>
+
+
+
+</RelativeLayout>
+    </ScrollView>

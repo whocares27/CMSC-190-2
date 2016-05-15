@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textAllCaps="true"
+        android:id="@+id/view_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@id/view"
+        android:textColor="@color/colorName"
+        android:layout_marginTop="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/view_desc"
+        android:hint="(No Description)"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_title"
+        android:layout_alignLeft="@+id/view_title"
+        android:layout_alignStart="@+id/view_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorSecondary"
+        android:layout_below="@+id/view_desc"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course:"
+        android:id="@+id/course_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_course"
+        android:layout_below="@id/view"
+        android:layout_toRightOf="@id/course_txt"
+        android:layout_toEndOf="@+id/course_txt"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="23dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight:"
+        android:id="@+id/weight_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_course"
+        android:layout_alignLeft="@+id/course_txt"
+        android:layout_alignStart="@+id/course_txt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_weight"
+        android:layout_toRightOf="@+id/weight_text"
+        android:layout_toEndOf="@+id/weight_text"
+        android:layout_below="@id/view_course"
+        android:layout_alignStart="@id/view_course"
+        android:layout_alignLeft="@id/view_course"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority:"
+        android:id="@+id/priority_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_weight"
+        android:layout_alignLeft="@+id/weight_text"
+        android:layout_alignStart="@+id/weight_text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_priority"
+        android:layout_below="@id/view_weight"
+        android:layout_alignLeft="@+id/view_weight"
+        android:layout_alignStart="@+id/view_weight"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When:"
+        android:id="@+id/due_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_priority"
+        android:layout_alignLeft="@+id/priority_txt"
+        android:layout_alignStart="@+id/priority_txt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_due"
+        android:layout_below="@id/view_priority"
+        android:layout_alignLeft="@+id/view_priority"
+        android:layout_alignStart="@+id/view_priority"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify:"
+        android:id="@+id/notify_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_due"
+        android:layout_alignLeft="@+id/due_txt"
+        android:layout_alignStart="@+id/due_txt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="(Not Set)"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_notify"
+        android:layout_below="@id/view_due"
+        android:layout_alignLeft="@+id/view_due"
+        android:layout_alignStart="@+id/view_due"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
+    </ScrollView>

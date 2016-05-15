@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <color name="colorPrimary">#16a085</color> -->
+    <color name="colorPrimary">#16174f</color>
+    <color name="colorPrimaryDark">#0d0e38</color>
+    <color name="colorPrimaryLight">#1d6289</color>
+    <color name="colorAccent">#ff2600</color>
+    <color name="colorSecondary">#667467</color>
+    <color name="appBackground">#ffffff</color>
+    <color name="spinnerbg">#f0f0f0</color>
+    <color name="colorName">#963019</color>
+    <color name="colorAdapter">#e7f5f5f5</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

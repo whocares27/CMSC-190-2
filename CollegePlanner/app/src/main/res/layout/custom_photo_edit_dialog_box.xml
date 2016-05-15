@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:id="@+id/toplayout"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Photo"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toplayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:background="@color/appBackground"
+            style="@style/AppTheme"
+            android:layout_height="fill_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+                <Spinner
+                    android:id="@+id/spinner_course_dialog"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/title_dialog"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint=" Title"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/spinner_course_dialog"
+                    android:background="@drawable/edittextstyle"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:background="@drawable/button_selector2"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/title_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="SAVE"/>
+
+                <Button
+                    android:id="@+id/btnExit"
+                    android:background="@drawable/button_selector2"
+                    android:textColor="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:text="EXIT"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

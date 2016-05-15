@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <HorizontalScrollView
+        android:fillViewport="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/sv1">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@id/toplayout"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="100dp"
+                android:background="#ffffff"
+                android:layout_height="40dp"
+                android:text="Time"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/time" />
+
+            <Button
+                android:layout_width="100dp"
+                android:background="#ffffff"
+                android:layout_height="40dp"
+                android:text="monday"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/monday"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/time"
+                android:layout_toEndOf="@+id/time"
+                android:onClick="showPopUpAdd"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:background="#ffffff"
+                android:layout_height="40dp"
+                android:text="tuesday"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/tuesday"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/monday"
+                android:layout_toEndOf="@+id/monday"
+                android:onClick="showPopUpAdd"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:background="#ffffff"
+                android:layout_height="40dp"
+                android:text="wednesday"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/wednesday"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/tuesday"
+                android:layout_toEndOf="@+id/tuesday"
+                android:onClick="showPopUpAdd"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:background="#ffffff"
+                android:layout_height="40dp"
+                android:text="thursday"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/thursday"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/wednesday"
+                android:layout_toEndOf="@+id/wednesday"
+                android:onClick="showPopUpAdd"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:background="#ffffff"
+                android:layout_height="40dp"
+                android:text="friday"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/friday"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/thursday"
+                android:layout_toEndOf="@+id/thursday"
+                android:onClick="showPopUpAdd"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:layout_below="@id/sv1">
+
+        <HorizontalScrollView
+            android:fillViewport="true"
+            android:id="@+id/sv2"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:id="@+id/main_layout">
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="0dp"
+                    android:text="Time"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/time1"
+                    android:visibility="invisible"/>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/monday1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/time1"
+                    android:layout_toEndOf="@+id/time1"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/tuesday1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/monday1"
+                    android:layout_toEndOf="@+id/monday1"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/wednesday1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tuesday1"
+                    android:layout_toEndOf="@+id/tuesday1"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/thursday1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/wednesday1"
+                    android:layout_toEndOf="@+id/wednesday1"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/friday1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/thursday1"
+                    android:layout_toEndOf="@+id/thursday1"
+                    android:visibility="invisible"/>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="30dp"
+                    android:text="7:00-8:00am"
+                    android:id="@+id/t1"
+                    android:textColor="#343d3a"
+                    android:layout_below="@id/monday1"/>
+
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="8:00-9:00am"
+                    android:id="@+id/t2"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t1"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="30dp"
+                    android:text="9:00-10:00am"
+                    android:id="@+id/t3"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t2"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="10:00-11:00am"
+                    android:id="@+id/t4"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t3"/>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="30dp"
+                    android:text="11:00-12:00pm"
+                    android:id="@+id/t5"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t4"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="12:00-1:00pm"
+                    android:id="@+id/t6"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t5"/>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="30dp"
+                    android:text="1:00-2:00pm"
+                    android:id="@+id/t7"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t6"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="2:00-3:00pm"
+                    android:id="@+id/t8"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t7"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="30dp"
+                    android:text="3:00-4:00pm"
+                    android:id="@+id/t9"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t8"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="4:00-5:00pm"
+                    android:id="@+id/t10"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t9"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#f2f2f2"
+                    android:layout_height="30dp"
+                    android:text="5:00-6:00pm"
+                    android:id="@+id/t11"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t10"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:background="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="6:00-7:00pm"
+                    android:id="@+id/t12"
+                    android:textColor="#343d3a"
+                    android:layout_below="@+id/t11"/>
+
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

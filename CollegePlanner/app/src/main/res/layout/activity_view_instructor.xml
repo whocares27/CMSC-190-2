@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:id="@+id/view_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorName"
+        android:layout_marginTop="38dp" />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorSecondary"
+        android:layout_below="@+id/view_name"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College:"
+        android:id="@+id/college_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_college"
+        android:layout_below="@id/view"
+        android:layout_toRightOf="@id/college_txt"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department:"
+        android:id="@+id/dept_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_college"
+        android:layout_alignLeft="@+id/college_txt"
+        android:layout_alignStart="@+id/college_txt"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_dept"
+        android:layout_toRightOf="@+id/dept_text"
+        android:layout_toEndOf="@+id/dept_text"
+        android:layout_below="@id/view_college"
+        android:layout_alignStart="@id/view_college"
+        android:layout_alignLeft="@id/view_college"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room:"
+        android:id="@+id/room_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_dept"
+        android:layout_alignLeft="@+id/dept_text"
+        android:layout_alignStart="@+id/dept_text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_room"
+        android:layout_below="@id/view_dept"
+        android:layout_alignLeft="@+id/view_dept"
+        android:layout_alignStart="@+id/view_dept"
+        android:layout_marginTop="11dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact:"
+        android:id="@+id/contact_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_room"
+        android:layout_alignLeft="@+id/room_text"
+        android:layout_alignStart="@+id/room_text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_contact"
+        android:layout_below="@id/view_room"
+        android:layout_alignLeft="@+id/view_room"
+        android:layout_alignStart="@+id/view_room"
+        android:layout_marginTop="11dp" />
+
+    <ImageButton
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/call_btn"
+        android:background="@color/appBackground"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_call"
+        android:layout_alignTop="@+id/contact_text"
+        android:layout_toRightOf="@+id/view_contact"
+        android:layout_toEndOf="@+id/view_contact"
+        android:onClick="startCall"/>
+
+    <ImageButton
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/msg_btn"
+        android:background="@color/appBackground"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_message"
+        android:layout_alignTop="@+id/contact_text"
+        android:layout_toRightOf="@+id/call_btn"
+        android:layout_toEndOf="@+id/call_btn"
+        android:onClick="startMessage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:id="@+id/email_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/view_contact"
+        android:layout_alignLeft="@+id/contact_text"
+        android:layout_alignStart="@+id/contact_text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="N/A"
+        android:textColor="@color/colorPrimaryLight"
+        android:id="@+id/view_email"
+        android:layout_below="@id/view_contact"
+        android:layout_alignLeft="@+id/view_contact"
+        android:layout_alignStart="@+id/view_contact"
+        android:layout_marginTop="11dp"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="View Consultation Hours"
+        android:id="@+id/consult_btn"
+        android:layout_below="@+id/email_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_selector2"
+        android:onClick="viewSchedule"/>
+
+
+
+
+</RelativeLayout>
+    </ScrollView>

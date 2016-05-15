@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/row_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff">
+    </TextView>
+
+    <TextView
+        android:id="@+id/row_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:paddingBottom="2dp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/row_course"
+        android:layout_alignLeft="@+id/row_course"
+        android:layout_alignStart="@+id/row_course">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:id="@+id/row_absence"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/row_course"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+</RelativeLayout>

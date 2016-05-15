@@ -1,0 +1,30 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_instructor" type="drawable">@drawable/ic_instructor_black_small</item>
+    <item name="ic_menu_course" type="drawable">@drawable/ic_course_black_small</item>
+    <item name="ic_menu_absent" type="drawable">@drawable/ic_absent_black_small</item>
+    <item name="ic_menu_note" type="drawable">@drawable/ic_note_black_small</item>
+    <item name="ic_menu_task" type="drawable">@drawable/ic_task_black_small</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_home" type="drawable">@drawable/ic_home_black_small</item>
+    <item name="ic_menu_photo" type="drawable">@drawable/ic_photo_black_small</item>
+
+
+    <item name="instructor_button" id="instructor_button" type="drawable">@drawable/ic_instructor_color_large</item>
+    <item name="course_button" type="drawable">@drawable/ic_course_color_large</item>
+    <item name="task_button" type="drawable">@drawable/ic_task_color_large</item>
+    <item name="note_button" type="drawable">@drawable/ic_note_color_large</item>
+    <item name="absence_button" type="drawable">@drawable/ic_absent_color_large</item>
+    <item name="photo_button" type="drawable">@drawable/ic_photo_color_large</item>
+
+    <item name="action_home" type="drawable">@drawable/ic_home_white_small</item>
+    <item name="action_instructor" type="drawable">@drawable/ic_instructor_white_small</item>
+    <item name="action_course" type="drawable">@drawable/ic_course_white_small</item>
+    <item name="action_note" type="drawable">@drawable/ic_note_white_small</item>
+    <item name="add_instructor" type="drawable">@drawable/ic_instructor_add_small</item>
+    <item name="add_course" type="drawable">@drawable/ic_course_add_small</item>
+    <item name="add_note" type="drawable">@drawable/ic_note_add_small</item>
+    <item name="action_absence" type="drawable">@drawable/ic_absent_white_small</item>
+    <item name="add_photo" type="drawable">@drawable/ic_photo_add_small</item>
+
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/spinnerbg"
+        android:layout_alignParentTop="true">
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Title: "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/spinner_course"
+            android:id="@+id/title_text1" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:hint="(No Title)"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/title_text1"
+            android:layout_toRightOf="@+id/title_text1"
+            android:layout_toEndOf="@+id/title_text1" />
+
+        <TextView
+            android:id="@+id/notelist_date"
+            android:textColor="@color/colorPrimaryLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/course"
+            android:layout_below="@id/notelist_date"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toplayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.uplb.lorenzo.collegeplanner.custom.LinedTextView
+        android:id="@+id/body"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="500dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:fadingEdge="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:imeOptions="actionNone" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

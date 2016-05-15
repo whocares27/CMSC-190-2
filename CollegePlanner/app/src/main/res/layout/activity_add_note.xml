@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/spinnerbg"
+        android:layout_alignParentTop="true">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_course"
+            android:prompt="@string/select_course"
+            android:padding="10dp"
+            android:layout_alignParentTop="true" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="TITLE: "
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/spinner_course"
+            android:id="@+id/title_text1" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:hint="(No Title)"
+            android:layout_toRightOf="@+id/title_text1"
+            android:layout_below="@id/spinner_course"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <TextView
+            android:id="@+id/notelist_date"
+            android:text="1/1/2012"
+            android:textColor="@color/colorPrimaryLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/spinner_course"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+    <com.uplb.lorenzo.collegeplanner.custom.LinedEditText
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/toplayout"
+        android:gravity="top"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:fadingEdge="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:imeOptions="actionNone" />
+</RelativeLayout>

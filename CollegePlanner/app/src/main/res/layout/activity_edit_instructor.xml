@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="25sp"
+            android:layout_marginTop="29dp"
+            android:textColor="@color/colorName"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/view"
+            android:layout_alignStart="@+id/view" />
+
+        <View
+            android:id="@+id/view"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorSecondary"
+            android:layout_below="@id/details"
+            />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/fname"
+            android:hint=" First Name"
+            android:textColorHint="#bbbbbb"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/lname"
+            android:hint=" Last Name"
+            android:layout_below="@+id/fname"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint=" E-mail Address"
+            android:id="@+id/email"
+            android:layout_below="@+id/lname"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:inputType="number"
+            android:ems="10"
+            android:hint=" Contact Number"
+            android:layout_marginTop="10dp"
+            android:id="@+id/contact"
+            android:layout_below="@+id/email" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/college"
+            android:hint=" College"
+            android:layout_below="@+id/contact"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/department"
+            android:hint=" Department"
+            android:layout_below="@+id/college"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/room"
+            android:hint=" Room Number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/department" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

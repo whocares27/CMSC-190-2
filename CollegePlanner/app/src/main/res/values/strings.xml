@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">College Planner</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="instructor">Instructor</string>
+    <string name="course">Course</string>
+    <string name="task">Task</string>
+    <string name="photo">Photo Note</string>
+    <string name="absence">Absence</string>
+    <string name="note">Note</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_instructor">Instructor</string>
+    <string name="title_activity_add_instructor">Add Instructor</string>
+    <string name="title_activity_add_course">Add Course</string>
+    <string name="title_activity_view_instructor">Instructor</string>
+    <string name="title_activity_course">Course</string>
+    <string name="title_activity_edit_instructor">Edit Instructor</string>
+    <string name="title_activity_edit_course">Edit Course</string>
+    <string name="title_activity_note">Note</string>
+    <string name="title_activity_add_note">Add Note</string>
+    <string name="title_activity_edit_note">Edit Note</string>
+    <string name="title_activity_absence">Absence</string>
+
+
+    <string name="select_course">Select Course...</string>
+
+    <string name="title_activity_view_photo_note">View_photo_note</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="days">
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>friday</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Quiz</item>
+        <item>Seatwork</item>
+        <item>Assignment</item>
+        <item>Exam</item>
+        <item>Project</item>
+        <item>Meeting</item>
+
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

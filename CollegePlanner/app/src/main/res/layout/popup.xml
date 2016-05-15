@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/appBackground">
+
+    <Spinner
+        android:id="@+id/spinner_day"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/edittextstyle"
+        android:id="@+id/desc"
+        android:hint=" Class/Description"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_time_small"
+            android:background="@drawable/button_selector2"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/start_time"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/start_tv"
+            android:layout_toEndOf="@+id/start_tv" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_time_small"
+            android:padding="10dp"
+            android:background="@drawable/button_selector2"
+            android:id="@+id/end_time"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignTop="@+id/start_time"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Start Time"
+            android:background="@color/spinnerbg"
+            android:id="@+id/start_tv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:background="@color/spinnerbg"
+            android:layout_height="match_parent"
+            android:text="End Time"
+            android:id="@+id/end_tv"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/end_time"
+            android:layout_toStartOf="@+id/end_time" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-20dp"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/popupSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/popupClose"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Cancel" />
+    </LinearLayout>
+
+
+</LinearLayout>

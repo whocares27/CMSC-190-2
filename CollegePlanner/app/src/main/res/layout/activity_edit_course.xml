@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Lecture"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryLight"
+                android:id="@+id/lecture"
+                android:onClick="lectureControl"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Lab"
+                android:textColor="@color/colorPrimaryLight"
+                android:textStyle="bold"
+                android:background="#f2f2f2"
+                android:id="@+id/lab"
+                android:onClick="labControl"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="Recit"
+                android:background="#f2f2f2"
+                android:textColor="@color/colorPrimaryLight"
+                android:textStyle="bold"
+                android:id="@+id/recit"
+                android:onClick="recitControl"/>
+
+
+        </TableRow>
+
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/code"
+            android:hint=" Course Code"
+            android:layout_below="@+id/row1"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/title"
+            android:hint=" Course Title"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/code" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/section"
+            android:hint=" Section"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/room"
+            android:hint=" Room"
+            android:layout_below="@+id/section"
+            android:layout_marginTop="10dp" />
+
+        <AutoCompleteTextView
+            style="@style/old_edittext"
+            android:id="@+id/spinner_instructor"
+            android:hint=" Choose Instructor"
+            android:layout_below="@+id/room"
+            android:layout_marginTop="10dp" />
+
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/units"
+            android:hint=" Units"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/spinner_instructor" />
+
+        <EditText
+            style="@style/old_edittext"
+            android:id="@+id/absences"
+            android:inputType="number"
+            android:hint=" Allowed absences"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/units" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

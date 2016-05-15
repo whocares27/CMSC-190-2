@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uplb.lorenzo.collegeplanner">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/splash_img"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".custom.Splashscreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".instructor.Instructor"
+            android:label="@string/title_activity_instructor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".instructor.Add_instructor"
+            android:label="@string/title_activity_add_instructor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".instructor.View_instructor"
+            android:label="@string/title_activity_view_instructor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".instructor.Edit_instructor"
+            android:label="@string/title_activity_edit_instructor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".course.Course"
+            android:label="@string/title_activity_course"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".course.Add_course"
+            android:label="@string/title_activity_add_course"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".course.View_course"
+            android:label="@string/title_activity_course"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".course.Edit_course"
+            android:label="@string/title_activity_edit_course"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".note.Note"
+            android:label="@string/title_activity_note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".note.Add_note"
+            android:label="@string/title_activity_add_note"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <activity
+            android:name=".note.View_note"
+            android:label="@string/title_activity_note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".note.Edit_note"
+            android:label="@string/title_activity_edit_note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".absence.Absence"
+            android:label="@string/title_activity_absence"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".absence.View_absence"
+            android:label="@string/title_activity_absence"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".instructor.View_instructor_schedule"
+            android:label="Schedule"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".photo_note.Photo_note"
+            android:label="Photo Note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".task.Task"
+            android:label="Task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".task.Add_task"
+            android:label="Add Task"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".task.View_task"
+            android:label="Task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".task.Edit_task"
+            android:label="Edit Task"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <receiver android:name=".notification.NotificationReceiver"/>
+
+        <service android:name=".notification.NotificationService" />
+
+        <receiver android:name=".notification.NotificationSetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name=".task_widget.Task_widget_provider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/task_widget_provider"/>
+        </receiver>
+
+        <service
+            android:name=".task_widget.Task_widget_service"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+
+    </application>
+
+</manifest>

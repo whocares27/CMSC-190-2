@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#f7f7f7"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_today"
+            android:drawableStart="@drawable/ic_today"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/todayDate"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorName" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#fdfdfd"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+           >
+
+            <Button
+                android:id="@+id/button_instructor"
+                android:text="@string/instructor"
+                android:drawableTop="@drawable/instructor_button"
+                android:paddingTop="15dp"
+                android:drawablePadding="-10dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                style="@style/button_text"
+                android:onClick="startInstructorActivity"
+
+                />
+
+            <Button
+                android:id="@+id/button_course"
+                android:drawableTop="@drawable/course_button"
+                android:paddingTop="15dp"
+                android:drawablePadding="-10dp"
+                android:text="@string/course"
+                android:layout_marginBottom="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                style="@style/button_text"
+                android:onClick="startCourseActivity"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            >
+
+        <Button
+            android:id="@+id/button_absence"
+            android:text="@string/absence"
+            android:drawableTop="@drawable/absence_button"
+            android:paddingTop="15dp"
+            android:drawablePadding="-10dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            style="@style/button_text"
+            android:onClick="startAbsenceActivity"
+
+            />
+
+        <Button
+            android:id="@+id/button_note"
+            android:text="@string/note"
+            android:drawableTop="@drawable/ic_note_color_large"
+            android:paddingTop="15dp"
+            android:drawablePadding="-10dp"
+            android:layout_marginBottom="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            style="@style/button_text"
+            android:onClick="startNoteActivity" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/button_photo"
+                android:drawableTop="@drawable/ic_photo_color_large"
+                android:text="@string/photo"
+                android:paddingTop="15dp"
+                android:drawablePadding="-10dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                style="@style/button_text"
+                android:onClick="startPhotoActivity"/>
+
+            <Button
+                android:id="@+id/button_task"
+                android:drawableTop="@drawable/ic_task_color_large"
+                android:text="@string/task"
+                android:paddingTop="15dp"
+                android:drawablePadding="-10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                style="@style/button_text"
+                android:onClick="startTaskActivity"/>
+            <!--
+            <Button
+                android:id="@+id/button_task"
+                android:drawableLeft="@drawable/ic_task_color_large"
+                android:drawablePadding="2dip"
+
+                android:paddingLeft="120dp"
+                android:paddingRight="160dp"
+                android:text="@string/task"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_span="2"
+                style="@style/button_text"/> -->
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/relativeLayout3">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:id="@+id/row0"
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="OVERVIEW"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/overview"
+                android:textColor="#343d3a"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:id="@+id/upcoming_task"
+                    android:text="0 upcoming tasks"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:id="@+id/quiz"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"
+                    android:text="0 quizzes today"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/seatwork"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"
+                    android:text="0 seatworks today"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/exam"
+                    android:layout_weight="1"
+                    android:text="0 exams today"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/meeting"
+                    android:layout_weight="1"
+                    android:text="0 meetings today"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/project"
+                    android:layout_weight="1"
+                    android:text="0 projects due today"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/assignment"
+                    android:layout_weight="1"
+                    android:text="0 assignments due today"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondary"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    </ScrollView>

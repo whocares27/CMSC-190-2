@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_instructor"
+            android:icon="@drawable/ic_menu_instructor"
+            android:title="Instructor" />
+        <item
+            android:id="@+id/nav_course"
+            android:icon="@drawable/ic_menu_course"
+            android:title="Course" />
+        <item
+            android:id="@+id/nav_absent"
+            android:icon="@drawable/ic_menu_absent"
+            android:title="Absent" />
+        <item
+            android:id="@+id/nav_note"
+            android:icon="@drawable/ic_menu_note"
+            android:title="Note" />
+        <item
+            android:id="@+id/nav_photo"
+            android:icon="@drawable/ic_menu_photo"
+            android:title="Photo Note" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_menu_task"
+            android:title="Task" />
+
+    </group>
+
+    <item android:title="Backup">
+        <menu>
+            <item
+                android:id="@+id/nav_import"
+                android:icon="@drawable/ic_import"
+                android:title="Import data" />
+
+            <item
+                android:id="@+id/nav_backup"
+                android:icon="@drawable/ic_backup"
+                android:title="Backup data" />
+
+
+
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/colorAdapter">
+
+    <TextView
+        android:id="@+id/row_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="(UNTITLED)"
+        android:textColorHint="@color/colorName"
+        android:textSize="19sp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorName">
+    </TextView>
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:id="@+id/row_body"
+        android:textColor="#343d3a"
+        android:layout_below="@+id/row_title"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:id="@+id/row_date"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/colorPrimaryLight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textAllCaps="true"
+        android:id="@+id/row_course"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/row_title"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

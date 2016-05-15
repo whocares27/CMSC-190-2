@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <Spinner
+        android:id="@+id/spinner_course"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/detail"
+        android:layout_height="150dp"
+        android:background="@color/spinnerbg"
+        android:layout_below="@id/spinner_course">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="10dp"
+            android:layout_height="60dp"
+            android:id="@+id/title"
+            android:textSize="25sp"
+            android:hint=" Title"
+            android:background="@drawable/task_edit_textstyle"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="10dp"
+            android:layout_height="60dp"
+            android:id="@+id/description"
+            android:textSize="20sp"
+            android:hint=" Description"
+            android:background="@drawable/task_edit_textstyle"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail"
+        android:text="When:"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/date_tv"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_selector2"
+        android:src="@drawable/ic_event_white_24dp"
+        android:id="@+id/btn_due_date"
+        android:layout_alignBottom="@+id/date_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="showDueDateDialog"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:hint="Select Date"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/spinnerbg"
+        android:textSize="16sp"
+        android:id="@+id/date_output"
+        android:layout_alignTop="@+id/btn_due_date"
+        android:layout_toLeftOf="@+id/btn_due_date"
+        android:layout_toStartOf="@+id/btn_due_date" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Notify:"
+        android:textSize="18sp"
+        android:id="@+id/notify_tv"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/date_tv"
+        android:layout_alignLeft="@+id/date_tv"
+        android:layout_alignStart="@+id/date_tv" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_selector2"
+        android:src="@drawable/ic_event_white_24dp"
+        android:id="@+id/btn_notify_date"
+        android:onClick="showNotifyDateDialog"
+        android:layout_alignBottom="@+id/notify_tv"
+        android:layout_toRightOf="@+id/date_output"
+        android:layout_toEndOf="@+id/date_output" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:gravity="center"
+        android:hint="Select Date"
+        android:layout_height="40dp"
+        android:background="@color/spinnerbg"
+        android:textSize="16sp"
+        android:id="@+id/notify_output"
+        android:layout_alignTop="@+id/btn_notify_date"
+        android:layout_toLeftOf="@+id/btn_notify_date"
+        android:layout_toStartOf="@+id/btn_notify_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="At:"
+        android:textSize="18sp"
+        android:id="@+id/time_tv"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/notify_tv"
+        android:layout_alignLeft="@+id/date_tv"
+        android:layout_alignStart="@+id/date_tv" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_selector2"
+
+        android:src="@drawable/ic_time_small"
+        android:id="@+id/btn_time_date"
+        android:onClick="showTimePickerDialog"
+        android:layout_alignBottom="@+id/time_tv"
+        android:layout_toRightOf="@+id/notify_output"
+        android:layout_toEndOf="@+id/notify_output" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:gravity="center"
+        android:hint="Select Time"
+        android:layout_height="40dp"
+        android:background="@color/spinnerbg"
+        android:textSize="16sp"
+        android:id="@+id/time_output"
+        android:layout_alignTop="@+id/btn_time_date"
+        android:layout_toLeftOf="@+id/btn_time_date"
+        android:layout_toStartOf="@+id/btn_time_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Weight:"
+        android:textSize="18sp"
+        android:id="@+id/weight_tv"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/time_tv"
+        android:layout_alignLeft="@+id/time_tv"
+        android:layout_alignStart="@+id/time_tv" />
+
+    <Spinner
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_event_white_24dp"
+        android:id="@+id/spinner_weight"
+        android:entries="@array/weight"
+        android:layout_below="@+id/btn_time_date"
+        android:layout_alignBottom="@+id/weight_tv"
+        android:layout_alignRight="@+id/btn_high"
+        android:layout_alignEnd="@+id/btn_high" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Priority:"
+        android:textSize="18sp"
+        android:id="@+id/Priority_tv"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/weight_tv"
+        android:layout_alignLeft="@+id/weight_tv"
+        android:layout_alignStart="@+id/weight_tv" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/spinnerbg"
+        android:textColor="@color/colorPrimaryLight"
+        android:text="High"
+        android:id="@+id/btn_high"
+        android:layout_alignBottom="@+id/Priority_tv"
+        android:layout_alignRight="@+id/btn_time_date"
+        android:layout_alignEnd="@+id/btn_time_date"
+        android:onClick="priorityControl"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="@color/spinnerbg"
+        android:text="low"
+        android:id="@+id/btn_low"
+        android:layout_alignTop="@+id/btn_high"
+        android:layout_toLeftOf="@+id/btn_high"
+        android:layout_toStartOf="@+id/btn_high"
+        android:onClick="priorityControl"/>
+
+
+</RelativeLayout>
+    </ScrollView>

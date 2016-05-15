@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewAbsence"
+        android:scrollbars="vertical"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/spinnerbg"
+        android:elevation="4dp"
+        android:layout_alignParentBottom="true">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:textSize="17sp"
+        android:background="@drawable/button_selector2"
+        android:src="@drawable/ic_event_white_24dp"
+        android:id="@+id/datebtn"
+        android:onClick="showDatePicker"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:layout_height="50dp"
+        android:textAllCaps="true"
+        android:textColor="#343d3a"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="Select Date"
+        android:id="@+id/date_output"
+        android:background="@color/spinnerbg"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/datebtn"
+        android:layout_toStartOf="@+id/datebtn" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
